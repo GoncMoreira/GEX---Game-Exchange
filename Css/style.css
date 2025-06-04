@@ -1,0 +1,670 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body{
+    font-family: 'Roboto';
+    margin: 0;
+    /*text-align: center;*/
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    
+}
+
+
+
+.hidden{
+    display: none;
+}
+
+#error{
+    background-color: #2a2f33;
+    color: white;  
+    padding: 1em; 
+    border-style:solid;  
+    border-radius: 0.5em;
+    border-color:#2a2f33 ; 
+}
+ul{
+    list-style-type: none;
+}
+
+header{
+    font-family: 'Roboto';
+    position:fixed;
+    width: 100%;
+    /*ustify-content: space-evenly;*/
+    margin: 0;
+    background-color:  #4CAF50;
+    color:  #2A2F33;
+    height: auto;
+    padding: 10px;
+}
+header div.search{
+    & > form#searchBar{
+        padding: 0em;
+        margin: 0;
+        & > *{
+            padding: 5px;
+            margin: 0;
+        }
+    }
+    & > select{
+        padding: 5px;
+        margin: 0em;
+    }
+}
+
+header div.header_imgs{
+    & a{
+        padding: 0;
+        margin: 0;
+        & img{
+            width: 70px;
+            height: 70px;
+            padding: 0;
+            margin: 0;
+        }
+    }
+    & img#sidebar_logo{
+        
+        padding: 0;
+        margin: 0;
+        width: 68px;
+        height: 68px;
+        border:2px;
+        border-style: solid;
+        transition: width 2s, height 2s, transform 2s, border-radius 4s;
+        
+        &:hover{
+            transform: rotate(180deg);
+            border-radius: 50%;
+        }
+
+    }
+}
+
+header div.user_status{
+    padding: 0;
+    margin: 0;
+    /*width: fit-content;
+    height: fit-content;*/
+    &>a{
+        margin:0;
+        padding: 0;
+        
+    }
+    &>span{
+        margin:0;
+        padding: 0;
+        
+        
+
+    }
+
+}
+
+
+main{
+    
+    padding: 5em 2em;
+}
+
+main > div.item{
+    width: 20em;
+    background-color: rgba(206, 246, 162, 0.572);
+    text-align: center;
+    margin: 1em;
+    padding: 1em;
+    height: fit-content;
+}
+
+main > div.item > a {
+    margin: 0;
+    padding: 0;
+    /*background-color: aquamarine;*/
+    & > img{
+        margin: 0;
+        padding: 0;
+    }
+}
+
+main > div.item > span{
+    text-align: justify;
+    margin-left: 0.5em;
+}
+
+
+main > div.item > button#buy {
+    margin: 0.5em;
+    
+}
+
+main > div.item > button#favourite {
+    margin: 0.5em;
+    
+}
+
+section.login{
+    margin-top: 100px;
+    width: 50%;
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-style: solid;
+    border-color:  #135515;
+    font-family: 'Roboto';
+}
+
+section.addItem{
+    margin-top: 100px;
+    width: 50%;
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-style: solid;
+    border-color: #135515;
+    font-family: 'Roboto';
+}
+
+section.item{
+    margin-top: 20px;
+    width: 75%;
+    padding: 0em 1em 1em 1em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-style: solid;
+    border-color: #135515;
+    font-family: 'Roboto';
+}
+
+section.itembuy{
+    margin-top: 40px;
+    width: 25%;
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-style: solid;
+    border-color: #135515;
+    font-family: 'Roboto';
+}
+section.itemwish{
+    margin-top: 40px;
+    width: 25%;
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-style: solid;
+    border-color: #135515;
+    font-family: 'Roboto';
+}
+
+button.itembuy{
+    width: 100%;
+    height: 100%;
+    background-color: #135515;
+}
+
+
+div img.item:hover{
+    
+    position:relative;
+    width: 50%;
+    height: 50%;
+}
+main#item_page section img.item:hover{
+    position: relative;
+    
+    width: 50%;
+    height: 50%;
+}
+
+main#wishList section img.item:hover{
+    position:absolute;
+    width: 50%;
+    height: 50%;
+}
+
+.changing>button{
+    background-color:#4CAF50;
+}
+
+#deletion_button{
+    background-color:#ff0000;
+    color: white;
+    margin-bottom: 1em;
+}
+
+#item_deletion_button{
+    background-color:#ff0000;
+    color: white;
+    margin: 0em 0em 6em 0em;
+}
+
+#promotion_button{
+    background-color:#063b00;
+    color: white;
+}
+
+#block_button{
+    background-color:#1f0909;
+    color: white;
+}
+
+
+
+footer{
+    margin: 0;
+    background-color: #4CAF50;
+    height: 3em;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: fixed;  
+    bottom: 0em;
+    & a{
+        margin: 0;
+        padding: 0;
+        width: fit-content;
+        height: fit-content;
+        a>img{
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+
+/*SHOPPING feColorMatrix */
+
+
+.cart {
+    width: 30em;
+    height: fit-content;
+    color:#2A2F33;
+    background-color: #EDEFF0;
+    text-align: left;
+    margin: 0.5em; padding: 0.5em;
+    margin-left: 3em;
+    margin-top: 3em;
+    
+}
+
+.cart > img{
+    
+    width: 200px;
+    height:200px;
+    
+}
+
+.cart > h2#price{
+    padding:0;
+    margin: 0;
+}
+.cart > h2#name{
+    padding:0;
+    margin: 0;
+}
+.cart > h2#dev{
+    padding:0;
+    margin: 0;
+}
+.cart > h2#seller{
+    padding:0;
+    margin: 0;
+}
+
+div#total_price{
+    margin-left: 3em;
+    margin-top: 3em;
+}
+
+main#shoppingCart>form.buyitem{
+    margin-left: 3em;
+    margin-top: 3em;
+    padding: 0;
+    & > button.buyitem{
+        padding: 1em;
+    }
+}
+
+
+.emptyCart {
+    text-align: center;
+}
+
+.purchase {
+    width: 40%;
+    background-color: rgba(50, 50, 50, 0.488);
+    align-items: start;
+}
+
+
+/* menu*/
+
+aside#menu{
+    height: 30em;
+    width: 15em;
+    padding-top: 5em;
+}
+
+aside#menu > button#submit{
+    
+    text-align: center;
+    margin-left: 1em;
+    margin-top: 2em ;
+    margin-bottom: 2em ;
+
+}
+
+aside#menu > div{
+    width: 12em;
+    padding-left: 1em;
+    &>h1{
+        text-align: justify;
+    }
+}
+
+
+table {
+    margin-top: 10em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section.past_purchase {
+    background-color: grey;
+    width: 50%;
+    margin:auto;
+}
+
+/* WISHLIST */
+
+.wish_item {
+    width: 20em;
+    height: fit-content;
+    color:#2A2F33;
+    background-color: #EDEFF0;
+    text-align: left;
+    margin: 0.5em; padding: 0.5em;
+    margin-left: 3em;
+    margin-top: 3em;
+    
+}
+
+.wish_item > img{
+    width: 100px;
+    height:100px;
+    
+
+}
+
+
+/* ITEMS BEING SOLD */
+
+section.items_of_user{
+    margin: 0;
+    padding: 0;
+    width: 30em ;
+    height: 30em;
+
+}
+.items_of_user>*{
+    & > p{
+        text-align: center;
+        font-size: large;
+    }
+}
+
+/* PROFILE */
+
+main#profile_page{
+    padding: 0;
+    margin: 0;
+   
+   
+}
+main#profile_page ul{
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    & > li {
+        font-size:medium;
+        background-color: #f0f0f0; /* Green background */
+        padding: 10px 15px; /* Add padding */
+        border-radius: 5px; /* Rounded corners */
+        margin: 0, 1em;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        transition: background-color 0.3s ease; /* Smooth background color transition */
+    }
+    
+    & > li:hover {
+        background-color: #45a049; /* Slightly darker green on hover */
+    }
+}
+
+
+
+a#button_admin_management{
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 1em;
+    text-align: center;
+
+}
+button#submit_edition{
+    width: 100%;
+    padding: 0.5em;
+    
+    text-align: center;
+
+}
+
+form#deletion_form{
+    margin-top:1em;
+    & button{
+        
+        margin: 0;
+        padding: 0;
+    }
+}
+
+aside#admin_panel{
+    margin: 2em;
+    padding: 1em;
+}
+aside#admin_panel form{
+    margin: 0.5em;
+    padding: 0;
+}
+aside#admin_panel button{
+    background-color: #4CAF50;
+    border: none; 
+    color: white; 
+    padding: 15px 32px; 
+    text-align: center; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 8px; 
+    transition: background-color 0.3s ease; 
+    width: 14em;
+    height: 3em;
+}
+
+aside#admin_panel button:hover{
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* PAST PURPOSES */
+
+section.past_purchase{
+    padding-left: 1em;
+}
+
+
+/* PURCHASED ITEM */
+
+aside#purchased_item_page{
+    height: 100%;
+    background-color: #4CAF50;
+    padding: 0.5em;
+
+    & table {
+        border-collapse: collapse;
+        width: 100%;
+        background-color: inherit;
+        & th, td {
+            border: 1px solid #000000;
+            padding: 8px;
+            text-align: left;
+        }
+        
+        & th {
+            background-color: #5563518d;
+        }
+    }
+    & h1 {
+        padding: 0em;
+        margin: 0em;
+        margin-top: 1em;
+    }
+    & p{
+        padding: 0;
+        margin: 0;
+    }
+
+}
+
+
+/* BUY ITEMS */
+
+main#buy_items_page > section.purchase{
+    background-color: #f0f0f0;
+    padding: 1em;
+    margin: 1em;
+}
+
+main#buy_items_page div.item{
+    padding: 0.5em;
+    margin: 0.5em;
+    transition: background-color 0.3s ease;
+    &:hover{
+        background-color: #5563518d;
+    }
+}
+
+
+main#buy_items_page div.item > span{
+    padding: 5px;
+    margin: 0;
+}
+
+#myText{
+    color:#0d8700;
+}
+
+#theirText{
+    color:#bb0000;
+}
+
+
+/* Conversations */
+#conversations {
+    padding: 20px;
+}
+
+.chat {
+    padding: 10px;
+    border-bottom: 1px solid #044514;
+    width: 200%;
+}
+
+.chat a {
+    text-decoration: none;
+    text-decoration-color: #044514;
+    display: block;
+}
+
+.chat a:hover {
+    background-color: #00750c;
+}
+
+.chat_form {
+    margin-top: 20px;
+}
+
+.chat_form input[type="text"] {
+    width: calc(200% - 10px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Chat */
+#myText {
+    justify-self: end;
+    background-color: #DCF8C6;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 400px;
+    word-wrap: break-word;
+    position: relative;
+    margin: 5px 16px;
+    align-self:first baseline;
+}
+
+#theirText {
+    justify-self: start;
+    background-color: #E5E5EA;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 400px;
+    word-wrap: break-word;
+    position: relative;
+    margin: 5px 16px;
+    align-self:first baseline;
+}
+
+.seen-marker {
+    font-size: 12px;
+    color: #999;
+    position: absolute;
+    right: 10px;
+    bottom: -15px;
+}
+
+.message-time {
+    font-size: 12px;
+    color: #999;
+    position: absolute;
+    bottom: 0px;
+}
+
+#my-message{
+    right:108%;
+}
+
+#their-message{
+    left:108%;
+}
+
+.conversation-form input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    max-height: 30px;
+    max-width: 60%;
+}

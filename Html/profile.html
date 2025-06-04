@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>ProfilePage</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="Register.css" rel="stylesheet">
+   </head>
+   <body>
+      <header>
+         <img id ="sidebar_logo" class="left_element" src = "https://cdn.icon-icons.com/icons2/930/PNG/512/menu_icon-icons.com_72311.png"  width="100" height="100">
+         <img class="left_element" src = "https://play-lh.googleusercontent.com/Fro4e_osoDhhrjgiZ_Y2C5FNXBMWvrb4rGpmkM1PDAcUPXeiAlPCq7NeaT4Q6NRUxRqo=w240-h480-rw" width="100" height="100">
+         <a id ="first_right_element" class = "right_element" href = "Login.html">| LOGIN</a>
+         <a class = "right_element" href = "Register.html"> REGISTER</a>
+         <label> Search:</label>
+         <input type="search" name="search" placeholder="search for an item">
+         <select name="coin">
+               <option value="euro">EUR</option>
+               <option value="pound">GBP</option> 
+               <option value="dollar">USD</option>
+               <option value="yen">JPY</option>
+         </select>
+      </header>
+      <main>
+        <section class="profile">
+            <img class="profile" id="profile_img" alt="profile_img" src="https://play-lh.googleusercontent.com/Fro4e_osoDhhrjgiZ_Y2C5FNXBMWvrb4rGpmkM1PDAcUPXeiAlPCq7NeaT4Q6NRUxRqo=w240-h480-rw"  width="100" height="100">
+        </section>
+        <br>
+        <form class="editprofile">
+            <button class="editprofile" formaction="edit_profile.php" formmethod="post" type="submit">
+               Edit profile
+            </button>
+         </form>
+        <br>
+        <br>
+        <section class="profile">
+            <h2 class="profile">Informations</h2>
+            <ul class="profile">
+                <li class="profile">UserName</li>
+                <li class="profile">Email</li>
+                <li class="profile">Name</li>
+            </ul>
+         </section>
+      </main>
+      <footer>
+        <a href="ItemsBeingSold.html" > <img src="https://picsum.photos/id/58/367/267" width="100" height="50"></a>
+        <a href="Favourites.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9NYiKnl5GtIN5gOXlmQbxyc6PdzeDGrLbTQ&s" width="50" height="50"></a>
+        <a href="ShoppingCart.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGAJbtkDzQpS-SoQdtgn_968lfXvbvvVCbxg&s" width="50" height="50"></a>
+     </footer>
+   </body>
+</html>
