@@ -1,1 +1,1 @@
-# GEX---Game-Exchange
+# GEX - Game Exchange
