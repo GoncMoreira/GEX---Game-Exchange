@@ -9,10 +9,10 @@
 ## Install Instructions
 
     sudo apt-get install php-gd
-    git clone git@github.com:FEUP-LTW-2024/ltw-project-2024-ltw11g01.git
-    cd ltw-project-2024-ltw11g01
-    git checkout final-delivery-v1
     php -S localhost:9000
+
+
+Then the project will be running on: localhost:9000/mainPage.php
 
 ## Screenshots
 
